@@ -1,0 +1,6 @@
+{
+  "appId": "com.vidstream.community",
+  "appName": "VidStream",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
