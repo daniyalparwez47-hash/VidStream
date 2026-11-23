@@ -1,0 +1,20 @@
+VIDSTREAM MOBILE / APK GUIDE
+
+Is ZIP mein installable PWA files aur Capacitor Android wrapper configuration hai. Compiled APK included nahin hai, kyun ke APK compile/sign karne ke liye Android SDK/Android Studio build environment chahiye.
+
+PWA (app jaisa install):
+1) www folder ko HTTPS hosting par deploy karein.
+2) Website Chrome Android mein kholein.
+3) Chrome menu (3 dots) > Install app / Add to Home screen.
+
+APK build (PC/Android Studio):
+1) Node.js LTS aur Android Studio (SDK + platform tools) install karein.
+2) Project folder mein terminal kholein.
+3) npm install
+4) npx cap add android
+5) npx cap sync android
+6) npx cap open android
+7) Android Studio mein Gradle sync complete hone dein. Build > Build Bundle(s) / APK(s) > Build APK(s).
+8) Debug APK Android Studio se output link par mil jayegi. Release APK ke liye signing setup zaroori hai.
+
+PWA install HTTPS hosting (ya localhost) par hi supported hoti hai. Supabase config www/supabase-config.js mein hai. RLS policies ko enable rakhein.
